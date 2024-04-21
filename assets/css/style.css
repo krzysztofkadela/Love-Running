@@ -7,18 +7,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /*General Style*/
 body {
-     min-height: 100vh;
-     display: flex;
-     flex-direction: column;
-     /*generic project style*/
-     color: #3a3a3a;
-     font-family: "Lato", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*generic project style*/
+    color: #3a3a3a;
+    font-family: "Lato", sans-serif;
 }
 
 /*Header*/
-header{
+header {
     background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
@@ -26,35 +27,52 @@ header{
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
 }
- header a {
+
+header a {
     text-decoration: none;
     color: inherit;
- }
+}
 
-h1{
+h1 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
+
 /*Main*/
-main{
+main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
+
 #menu {
     list-style-type: none;
     font-size: 110%;
     letter-spacing: 4px;
 }
-#menu li{
+
+#menu li {
     margin-bottom: 1em;
 }
-.active{
+
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/*Navbar style with dropp down menu*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
+
 /*footer*/
-footer{
+footer {
     background-color: lightgray;
 }
