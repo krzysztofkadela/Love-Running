@@ -1,7 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
 
-/*asteric wildcart selector to override default styles added by a browser*/
+/*asterisk wildcart selector to override default styles added by a browser*/
 * {
     padding: 0;
     margin: 0;
@@ -43,8 +43,6 @@ h1 {
     color: #252525;
 }
 
-
-
 #menu {
     list-style-type: none;
     font-size: 110%;
@@ -70,9 +68,18 @@ nav {
     display: none;
     top: 100%;
 }
-/*Nav togle*/
+
+/*Nav toggle*/
 #nav-toggle:checked~nav {
     display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /*Main*/
@@ -80,9 +87,25 @@ main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
+    
 }
 
 /*footer*/
 footer {
     background-color: lightgray;
+}
+
+/*Media query: Tablet and larger (768px and up)*/
+@media screen and (min-width: 768px) {
+    nav{
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu{
+        display: flex;
+    }
 }
