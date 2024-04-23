@@ -163,6 +163,12 @@ main {
         /*margin to bigger then a size of header to push main elements lower*/
         margin-top: 60px;
     }
+
+    /*Hero Section*/
+    #cover-text{
+        width: 300px;
+        right: 50px;
+    }
 }
 
 /* style for screen 992px and large*/
