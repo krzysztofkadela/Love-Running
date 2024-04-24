@@ -114,6 +114,21 @@ main {
 #cover-text > h2, #cover-text > h3{
     color: #ffffff;
 }
+/*reasones section*/
+#reasons{
+    width: 90%;
+    height: 600px;
+    background-color: aquamarine;
+    position: relative;
+    margin: 20px auto;
+
+}
+
+#reasons  h2 {
+    font-size: 280%;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
 /*footer*/
 #social-networks {
