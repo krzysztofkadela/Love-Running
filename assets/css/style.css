@@ -160,6 +160,22 @@ hr {
     padding: 5%;
     color: #3a3a3a;
 }
+#circle-cover-bg {
+    width: 90vw;
+    height: 90vw;
+    background: url(../images/reasons-image.webp) no-repeat center center/cover;
+    margin-bottom: 20px;
+    /*Makes a image into a circle*/
+    border-radius: 50%;
+    /*This will set a maximum size for the picture*/
+    max-width: 300px;
+    max-height: 300px;
+}
+#benefits-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /*Media query: Tablet and larger (768px and up)*/
 @media screen and (min-width: 768px) {
