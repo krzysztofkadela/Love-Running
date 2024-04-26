@@ -137,12 +137,15 @@ hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
-#benefits-phisical > div, #benefits-mental > div{
+
+#benefits-phisical>div,
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 
 }
-#benefits p{
+
+#benefits p {
     padding: 0 20px;
 }
 
@@ -160,6 +163,7 @@ hr {
     padding: 5%;
     color: #3a3a3a;
 }
+
 #circle-cover-bg {
     width: 90vw;
     height: 90vw;
@@ -171,7 +175,8 @@ hr {
     max-width: 300px;
     max-height: 300px;
 }
-#benefits-image{
+
+#benefits-image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,7 +212,7 @@ hr {
 
     /*main content*/
     main {
-        /*margin to bigger then a size of header to push main elements lower*/
+        /*margin bigger then a size of header to push main elements lower*/
         margin-top: 60px;
     }
 
@@ -216,11 +221,60 @@ hr {
         width: 300px;
         right: 50px;
     }
+
+    /*Reasone section*/
+    #benefits-phisical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*75% of the width for these to elements*/
+    #benefits-phisical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    /*moving to the left*/
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
 }
 
 /* style for screen 992px and large*/
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        /*Reasone section*/
+        #benefits {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #benefits>div {
+            flex: 1;
+        }
+
+        #benefits-image {
+            order: 0;
+        }
+
+        #benefits-mental {
+            order: 1;
+        }
+        #benefits-mental > div {
+            align-self: self-start;
+        }
+        #benefits-physical > div {
+            align-self: flex-end;
+        }
+
     }
 }
