@@ -191,6 +191,12 @@ hr {
 #photos {
     line-height: 0;
 }
+/*SIgnUp section*/
+#sign-up form h2 {
+    color:black ;
+    text-align: center;
+}
+
 
 
 /*footer*/
@@ -296,8 +302,6 @@ hr {
     /*gallery*/
     #photos{ 
         column-count: 3;
-
-
     }
     
 }

@@ -28,7 +28,7 @@
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="" >Home</a>
+                    <a href="">Home</a>
                 </li>
                 <li>
                     <a href="">Gallery</a>
@@ -41,7 +41,44 @@
 
     </header>
 
-    <main>Sing up contain</main>
+    <main>
+        <section id="sign-up">
+
+            <form action="https://formdump.codeinstitute.net/" method="post">
+
+                <h2><i class="fa-solid fa-heart-pulse"></i>Let's get you signed up!</h2>
+                <br>
+                <label for="first-name">First Name:</label>
+                <input id="first-name" type="text" name="postdata" required>
+                <br>
+                <label for="last_name">Last Name:</label>
+                <input id="last_name" type="text" name="getdata" required>
+                <br>
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" name="getdata" required>
+            </form>
+            <br>
+            <div>
+                <div>
+                <label for="road">Road:</label>
+                <input id="road" type="radio" name="runing-preferences" required>
+                </div>
+                <br>
+                <div>
+                    <label for="trail">Trail:</label>
+                <input id="trail" type="radio" name="runing-preferences" required>
+                </div>
+                <br>
+                <div>
+                    <label for="both">Both:</label>
+                <input id="both" type="radio" name="runing-preferences" required>
+                </div>
+                <br>
+            </div>
+            
+                <input id="both" type="submit"class="join" value="Let's Join" name="runing-preferences" required>
+        </section>
+    </main>
 
     <footer>
         <ul id="social-networks">
