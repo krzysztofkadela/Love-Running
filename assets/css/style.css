@@ -27,7 +27,8 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
-.hidden-heading{
+
+.hidden-heading {
     display: none;
 }
 
@@ -154,7 +155,7 @@ hr {
 
 /*Meet times section*/
 #times {
-    
+
     background: url(../images/dublin-city.webp) no-repeat center/cover;
     display: flex;
     flex-wrap: wrap;
@@ -171,7 +172,7 @@ hr {
     flex-basis: 200px;
     flex-grow: 1;
     /* Creates a grid of meet up time divs over the background image*/
-    border:2px solid white;
+    border: 2px solid white;
 
 
 }
@@ -179,6 +180,16 @@ hr {
 #times h3 {
     /*overwright color set for h3 elements in general style*/
     color: #85c4e859;
+}
+
+/*Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
 }
 
 
@@ -213,6 +224,14 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*Media query: Larger and lanscape photos (768px and up)*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /*Media query: Tablet and larger (768px and up)*/
@@ -274,13 +293,22 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+    /*gallery*/
+    #photos{ 
+        column-count: 3;
 
+
+    }
+    
 }
 
-/* style for screen 992px and large*/
+/* style for screen 992px and large (laptops, desktops)*/
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+    #photos{
+        column-count: 4;
     }
 
 
