@@ -27,6 +27,9 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+.hidden-heading{
+    display: none;
+}
 
 /*Header*/
 header {
@@ -178,9 +181,6 @@ hr {
     color: #85c4e859;
 }
 
-#meetups h2 {
-    text-align: center;
-}
 
 /*footer*/
 #social-networks {
