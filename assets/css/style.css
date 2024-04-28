@@ -204,22 +204,35 @@ hr {
     background-position: 75%;
     flex-grow: 1;
     background: url(../images/signup-image.webp) no-repeat center center/cover;
-    padding: 30px 10% 0 10%;
+    padding: 20px 10% 0 10%;
 }
 .text-input {
     background: transparent;
     color: #fafafa;
-    border: 2px solid #fafafa;
+    border: 1px solid #fafafa;
     border-radius: 2px;
+    margin: 5px 0 20px 0;
     height: 25px;
     width: 100%;
-    padding: 5px 0 5px 0;
+    padding: 0 5px;
 }
 #sign_up_form{
     background-color: rgba(60, 60, 60, 0.6);
     color: aquamarine;
-    padding-left: 20px;
+     padding: 30px;
 
+}
+.radio-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.joinbutton{
+    background-color: bisque;
+    font-size: 100%;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 12px;
 }
 
 
